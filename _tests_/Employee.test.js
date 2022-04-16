@@ -7,7 +7,7 @@ test("test for constructor values from Employee to match contst Employee input b
     "stayvibrant@gmail.com"
   );
 
-  expect(Employee.name).toBe("San Holo");
-  expect(Employee.id).toBe("11261990");
-  expect(Employee.email).toBe("stayvibrant@gmail.com");
+  expect(myEmployee.name).toBe("San Holo");
+  expect(myEmployee.id).toBe("11261990");
+  expect(myEmployee.email).toBe("stayvibrant@gmail.com");
 });

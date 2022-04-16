@@ -12,5 +12,5 @@ test("test for constructor values for Engineer to match contst input below", () 
   expect(myEngineer.name).toBe("Jose");
   expect(myEngineer.id).toBe("1102");
   expect(myEngineer.email).toBe("jose@bff.com");
-  expect(myEngineer.gitHubUsername).toBe("amhernandez1163");
+  expect(myEngineer.github).toBe("amhernandez1163");
 });
