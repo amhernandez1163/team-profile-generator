@@ -14,3 +14,25 @@ test("test for constructor values for Intern to match const input below", () => 
   expect(myIntern.email).toBe("bestie@email.com");
   expect(myIntern.school).toBe("Colorado");
 });
+
+test("test to verify if getSchool shows Colorado", () => {
+  const myIntern = new Intern(
+    "Deraven",
+    "1005",
+    "bestie@email.com",
+    "Colorado"
+  );
+
+  expect(myIntern.getSchool()).toBe("Colorado");
+});
+
+test("test to verify if getRole shows Intern", () => {
+  const myIntern = new Intern(
+    "Deraven",
+    "1005",
+    "bestie@email.com",
+    "Colorado"
+  );
+
+  expect(myIntern.getRole()).toBe("Intern");
+});
