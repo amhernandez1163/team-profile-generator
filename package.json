@@ -18,11 +18,6 @@
   "bugs": {
     "url": "https://github.com/amhernandez1163/team-profile-generator/issues"
   },
-  "homepage": "https://github.com/amhernandez1163/team-profile-generator#readme",
-  "dependencies": {
-    "inquirer": "^8.2.2",
-    "node": "^17.7.2"
-  },
   "devDependencies": {
     "jest": "^27.5.1"
   }
