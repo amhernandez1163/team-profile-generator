@@ -12,5 +12,5 @@ test("test for constructor values for Intern to match const input below", () => 
   expect(myIntern.name).toBe("Deraven");
   expect(myIntern.id).toBe("1005");
   expect(myIntern.email)toBe("bestie@email.com");
-  expect(myIntern.Uni)toBe("Colorado")
+  expect(myIntern.school)toBe("Colorado");
 });
