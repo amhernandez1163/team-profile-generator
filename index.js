@@ -5,6 +5,7 @@ const { Employee, Engineer, Intern, Manager } = require("./lib/index");
 const generateContent = require("./src/generateContent");
 const team = [];
 
+// initial array - prompts on user envoke for everyone
 function managerArr() {
   inquirer
     .prompt([
@@ -42,6 +43,7 @@ function managerArr() {
     });
 }
 
+// Choice check point - user can: add an engineer, add an intern, or build their team.
 function promptMenu() {
   inquirer
     .prompt([
@@ -60,12 +62,13 @@ function promptMenu() {
         case "Add an Intern":
           InternArr();
           break;
-        default
-        buildTeam();
+        case "Build my team":
+          buildTeam();
       }
     });
 }
 
+// Engineer array - prompts per user selection of "Add an Engineer"
 function EngineerArr() {
   console.log(`
     ************************
@@ -107,6 +110,7 @@ function EngineerArr() {
     });
 }
 
+// Intern array - prompts per user selection of "Add an Intern"
 function InternArr() {
   console.log(`
     ************************
@@ -148,15 +152,16 @@ function InternArr() {
     });
 }
 
-function buildTeam(data) {
+function buildTeam() {
   console.log(`
     ***********************
         Build My Team
     ***********************`);
 
-  const conent = generateContent(data);
+  const content = generateContent(team);
   fs.writeFile("./dist/index.html", content, (err) => {
     console.log(err);
   });
 }
+
 managerArr();
