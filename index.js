@@ -152,6 +152,7 @@ function InternArr() {
     });
 }
 
+// promts generateContent function and html build based on user input
 function buildTeam() {
   console.log(`
     ***********************

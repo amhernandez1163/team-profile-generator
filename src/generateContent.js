@@ -1,3 +1,4 @@
+// Build of Manager, Intern, Engineer based on user input with all necessary HTML
 const generateContent = (team) => {
   console.log(team);
   const html = [];
@@ -74,6 +75,7 @@ const generateContent = (team) => {
     html.push(internHTML);
   };
 
+  // for loop checking for status of getRole() to equal terms from our lib/js
   for (let i = 0; i < team.length; i++) {
     if (team[i].getRole() === "Manager") {
       createManager(team[i]);
@@ -89,6 +91,7 @@ const generateContent = (team) => {
   return html.join("");
 };
 
+// basic HTML for page generation
 module.exports = (team) => {
   return `
     <!DOCTYPE html>
